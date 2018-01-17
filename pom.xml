@@ -11,6 +11,10 @@
     <name>summer-alipay</name>
     <description>Demo project for Spring Boot</description>
 
+    <modules>
+        <module>summer-alipay-core</module>
+    </modules>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>

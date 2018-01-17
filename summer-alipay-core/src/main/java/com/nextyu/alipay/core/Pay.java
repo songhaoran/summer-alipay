@@ -124,6 +124,7 @@ public class Pay {
      */
     public String pcPayWithQRCode() {
         checkPayParam();
+        checkNotNull(aliPay.qrcodeWidth, "qrcodeWidth cant't be null");
         AlipayClient alipayClient = getAlipayClient();
         AlipayTradePagePayRequest request = new AlipayTradePagePayRequest();
         AlipayTradePagePayModel model = new AlipayTradePagePayModel();
